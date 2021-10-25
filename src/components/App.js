@@ -11,16 +11,13 @@ import { Link } from 'react-router-dom'
 
 
 export const App = () => {
-    const descrip = new Descrip();
+    
     const storage = new Storage();
     const { city } = storage.getLocacionData();
     const weather = new Weather(city);
 
     const dispatch = useDispatch()
-    const handlelogout = () => {
-        dispatch(logout())
-        
-    }
+   
     
 
     async function fetchWeather(){
