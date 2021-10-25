@@ -1,0 +1,2 @@
+export const API_BASE_URL = 'https://api.mapbox.com/geocoding/v5/mapbox.places/city.json?access_token='
+export const token = 'pk.eyJ1IjoiYW5sbGk0IiwiYSI6ImNrdjVqd3g5MjE2MXQzMW82NjY5cHlpdDgifQ.E_391GWD6qsPYW72ilG4xA'; // TOKEN VALIDO DE MAPBOX

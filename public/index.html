@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PT_WEATHER</title>
+  </head>
+  <body>
+
+    <div className="container p-4" style="display: none;">
+      <div className="row">
+          <div className="col-sm-12 col-md-4 mx-auto text-center" style="color: aliceblue;">
+              <div className="card" style="color: aliceblue;">
+                  <div className="card-body">
+                      <h1 id="weather_location" className="h3"></h1>
+                      <h3 id="weather_description" className="h4"></h3>
+                      <h3 id="weather_string"></h3>
+                      <ul className="list-group mt-3">
+                          <li id="weather_humidity" className="list-group-item"></li>
+                          <li id="weather_wind" className="list-group-item"></li>
+                      </ul>
+                  </div>
+              </div>
+              <div className="card">
+                  <div className="card-body">
+                      <form id="weather_form">
+                          <div className="form-group">
+                              <input type="text" id="weather_city" className="form-control" placeholder="Ciudad" autofocus>
+                          </div>
+                          
+                          <div className="form-group">
+                              <button className="btn btn-primary btn-block" id="weather_btnForm">Obtener Clima</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+  </body>
+</html>
