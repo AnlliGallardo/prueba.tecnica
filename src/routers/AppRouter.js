@@ -41,7 +41,7 @@ export default function AppRouter() {
         }
         setChecking(false)
     })
-}, [dispatch, setChecking])
+}, [dispatch, setChecking, auth])
 
 if (checking) {
     return null;

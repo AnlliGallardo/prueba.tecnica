@@ -1,10 +1,10 @@
 
 import '../styles/styles.css'
 import { Weather } from './SeccionApi'
-import { Descrip } from './Descrip'
+
 import { Storage } from './Storage'
 import { AppList } from './AppList'
-import { logout, startLogout } from '../actions/actionLogin'
+import { startLogout } from '../actions/actionLogin'
 import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 
@@ -23,7 +23,7 @@ export const App = () => {
     async function fetchWeather(){
         const data = await weather.getWeather();
         console.log(data);
-        // descrip.render(weather);
+        
     }
 
     document.getElementById('weather_btnForm').addEventListener('click', (e) =>{
